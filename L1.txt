@@ -1,0 +1,30 @@
+Data is a collection of raw, unorganized facts and details like text, observations, figures, symbols,
+and descriptions of things etc.
+
+Types of Data
+a. Quantitative
+i. Numerical form
+ii. Weight, volume, cost of an item.
+b. Qualitative
+i. Descriptive, but not numerical.
+ii. Name, gender, hair color of a person.
+
+What is Information?
+a. Info. Is processed, organized, and structured data.
+b. It provides context of the data and enables decision making.
+
+      processed
+DATA -----> Information
+What is DBMS?
+a. A database-management system (DBMS) is  a set of
+programs to access those data (the database)
+contains information relevant to an enterprise. The primary goal of a DBMS is to provide a way to
+store and retrieve database information that is both convenient and efficient.
+
+DBMS VS  FILE_SYSTEM
+Data redundancy , inconsistency
+difficulty in   accessing data
+data isolation
+integrity , atomicity
+Concurrency
+
