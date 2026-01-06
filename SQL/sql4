@@ -1,0 +1,14 @@
+CREATE DATABASE bank;
+USE bank;
+
+CREATE TABLE account(
+id int primary key,
+name varchar(255) UNIQUE,
+balance  int,
+CONSTRAINT acc_bal_check CHECK(balance > 1000)
+);
+
+INSERT INTO account(id, name,balance)
+values(1,'A',10000);
+
+SELECT * FROM account;

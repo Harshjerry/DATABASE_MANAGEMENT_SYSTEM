@@ -1,0 +1,35 @@
+CREATE DATABASE shop;
+USE shop;
+
+CREATE TABLE Customer (
+    id INT PRIMARY KEY,
+    cname VARCHAR(225),
+    address VARCHAR(225),
+    gender CHAR(2),
+    city VARCHAR(225),
+    pincode INT
+);
+
+INSERT INTO Customer VALUES
+(1251, 'Ram Kumar', 'Dilbagh Nagar', 'M', 'Jalandhar', 144002),
+(1300, 'Shyam Singh', 'Ludhiana H.O.', 'M', 'Ludhiana', 141001),
+(245, 'Neelabh Shukla', 'Ashok Nagar', 'M', 'Jalandhar', 144003),
+(210, 'Barkha Singh', 'Dilbagh Nagar', 'F', 'Jalandhar', 144002),
+(500, 'Rohan Arora', 'Ludhiana H.O.', 'M', 'Ludhiana', 141001);
+
+CREATE TABLE Order_details (
+    order_id INT,
+    delivery_date DATE,
+    cust_id INT,
+    FOREIGN KEY (cust_id) REFERENCES Customer(id)
+);
+INSERT INTO Order_details VALUES
+(1, '2024-01-10', 1251),
+(2, '2024-01-15', 1300),
+(3, '2024-01-20', 245);
+
+-- use of  foreign  key 
+
+SELECT * FROM Customer;
+SELECT * FROM Order_details;
+
