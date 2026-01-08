@@ -1,0 +1,39 @@
+-- SELF JOIN
+SELECT 
+    e.name AS employee_name,
+    m.name AS manager_name
+FROM employee AS e
+INNER JOIN employee AS m
+ON e.manager_id = m.id;
+
+-- it will output elemplye__name  with their  manager name 
+
+-- OUTER JOIN  1.LEFT JOIN
+SELECT 
+    e.name AS employee_name,
+    m.name AS manager_name
+FROM employee AS e
+LEFT JOIN employee AS m
+ON e.manager_id = m.id;
+
+-- OUTER JOIN 2. RIGHT JOIN
+SELECT columns
+FROM table1
+RIGHT JOIN table2
+ON condition;
+
+
+-- OUTER JOIN  3. FULL JOIN =LEFT_JOIN +RIGHT_JOIN
+SELECT *
+FROM left_table AS l
+LEFT JOIN right_table AS r
+ON l.key = r.key
+
+UNION
+
+SELECT *
+FROM left_table AS l
+RIGHT JOIN right_table AS r
+ON l.key = r.key;
+
+ 

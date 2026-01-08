@@ -1,0 +1,19 @@
+  Use Shop;
+   CREATE TABLE  testing(
+   ID INT  PRIMARY KEY,
+   NAME VARCHAR(5) UNIQUE,
+	BALANCE INT  NOT NULL DEFAULT 0);
+    
+    -- add col
+    ALTER TABLE  testing ADD  interest FLOAT NOT NULL DEFAULT 0;
+    
+    -- modify  data type
+    ALTER TABLE testing MODIFY interest DOUBLE NOT NULL ;
+    
+    -- rename  column  name 
+ALTER TABLE testing 
+CHANGE interest saving_interest DOUBLE NOT NULL;
+
+    SELECT * FROM testing;
+    DESC testing;
+    

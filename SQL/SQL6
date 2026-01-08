@@ -1,0 +1,6 @@
+USE SHOP;
+SELECT * FROM Customer;
+-- REPLACING A ROW
+REPLACE INTO Customer (id, cname , city)
+VALUES (1333,'tempu','SRE colony');
+-- if  value  1333 already exist  it will be replaced
